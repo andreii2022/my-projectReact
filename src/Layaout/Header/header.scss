@@ -1,3 +1,97 @@
-.header{
-    background: #191818;
+.header {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 32px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        background: #000;
+    }
+
+    &__box {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    &__free {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        position: relative;
+        margin: 60px 0 50px;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 436px;
+            height: 10px;
+            background: url('../../images/line_header.svg') no-repeat;
+        }
+    }
+
+    &__title {
+        font-size: 56px;
+        line-height: 68px;
+        font-weight: 800;
+        margin-bottom: 35px;
+        @media screen and (max-width: 800px) {
+            font-size: 44px;
+            line-height: 51px;
+        }
+        @media screen and (max-width: 425px) {
+            font-size: 36px;
+            line-height: 43px;
+        }
+    }
+
+    &__txt {
+        max-width: 390px;
+        margin: 0 auto 20px;
+    }
+
+    &__video {
+        max-width: 785px;
+        margin: 38px auto 20px;
+        height: 448px;
+        background: #E5E5E5;
+        position: relative;
+    }
+
+    &__play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: none;
+        width: 62px;
+        height: 62px;
+        background: #1c50fe;
+        border-radius: 50%;
+        cursor: pointer;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+            background: url('../../images/play.svg') no-repeat;
+        }
+    }
+
+    &__post {
+        max-width: 785px;
+        margin: 0 auto;
+        padding: 15px 20px;
+        box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+    }
 }

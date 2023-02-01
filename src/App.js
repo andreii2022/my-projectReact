@@ -2,7 +2,7 @@ import Header from './Layaout/Header/Header';
 import Footer from './Layaout/Footer/Footer';
 import Main from './Pages/Main';
 import React from 'react';
-import './Main.scss';
+import './main.scss';
 
 const App = () => {
   return (
