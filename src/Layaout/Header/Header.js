@@ -1,6 +1,8 @@
 import React from 'react';
 import MainButton from '../../Pages/MainButton/MainButton';
 import avatar from '../../images/Avatar.jpg'
+import iconOne from '../../images/iconOne.svg'
+import iconTwo from '../../images/iconTwo.svg'
 
 const Header = () => {
     return (
@@ -19,6 +21,12 @@ const Header = () => {
             </div>
             <div className="header__post">
                 <img src={avatar} alt="avatar" />
+                <h2 className='header__text'>100% Free Webinar From Trible Founder Alex</h2>
+                <img className='header__icone1' src={iconOne} alt="iconOne" />
+                <span className='header__text1' >On Demand</span>
+                <img className='header__icone2' src={iconTwo} alt="iconTwo" />
+                <span className='header__text2'>45+ Minutes</span>
+
             </div>
         </div>
     </header>       

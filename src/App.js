@@ -1,8 +1,8 @@
 import Header from './Layaout/Header/Header';
 import Footer from './Layaout/Footer/Footer';
-import Main from './Pages/Main';
+import Main from './Layaout/Main/Main';
 import React from 'react';
-import './main.scss';
+import './App.scss';
 
 const App = () => {
   return (
