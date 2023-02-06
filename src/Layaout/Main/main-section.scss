@@ -1,0 +1,95 @@
+.hi{
+    background: #D2DBF7;
+    padding: 50px 0px;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 380px 1fr;
+        column-gap: 90px;
+        @media screen and (max-width:1024px){
+            column-gap: 40px;
+        }
+        @media screen and (max-width:992px){
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+    }
+
+    &__image {
+        // 1 block
+        order: 1;
+        margin-bottom: 25px;
+				width: 352px;
+				height: 383px;
+				overflow: hidden;
+				img {
+					width: 100%;
+          object-fit: cover;
+          height: 100%;
+				}
+
+        @media screen and (max-width:992px){
+					order: 2;
+					width: 208px;
+					height: 208px;
+					border-radius: 50%;
+        }
+    }
+
+    &__txt {
+        // 2 block
+        order: 3;
+        max-width: 235px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 20px;
+        @media screen and (max-width:992px){
+            order: 4;
+        }
+    }
+
+    &__body {
+        // 3 block
+        order: 2;
+        @media screen and (max-width:992px){
+            order: 1;
+        }
+    }
+
+    &__btn {
+        // 4 block
+        order: 4;
+        margin-top: -100px;
+        align-self: start;
+        padding: 10px 0;
+        max-width: 377px;
+        @media screen and (max-width:1024px){
+					margin-top: -75px;
+        }
+        @media screen and (max-width:992px){
+            order: 3;
+						margin-top: 0;
+            padding: 10px 50px;
+        }
+    }
+
+    &__list {
+			li {
+				margin-bottom: 25px;
+				background: url('../../images/chek.svg')  0 0 no-repeat;
+				font-size: 20px;
+				padding: 0px 0px 0px 36px;
+			}
+      span {
+        font-weight: 800;
+      }
+    }
+    
+		&__title {
+			font-size: 46px;
+   		font-weight: 800;
+			margin-top: 30px;
+			margin-bottom: 45px;
+		}
+}
+

@@ -18,6 +18,11 @@
         margin: 0 auto;
     }
 
+		&__btn {
+			max-width: 560px;
+			width: 100%;
+		}
+
     &__free {
         font-weight: 700;
         font-size: 20px;
@@ -33,6 +38,10 @@
             width: 436px;
             height: 10px;
             background: url('../../images/line_header.svg') no-repeat;
+						@media screen and (max-width: 768px) {
+							width: 327px;
+							background: url('../../images/small-line.svg') no-repeat;
+						}
         }
     }
 
@@ -93,55 +102,53 @@
         padding: 15px 20px;
         box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.1);
         border-radius: 20px;
-        display: flex;
-        justify-content: space-between;
     }
 
     &__text {
         position: absolute;
-
         left: calc(50% - 466px/2 - 53px);
         top: 986px;
         font-weight: 800;
         font-size: 20px;
-        
-        
-       
-        
-         
-
     }
 
-    &__text1 {
-            position: absolute;
-            left: calc(50% - 89px/2 - 275.5px);
-            top: 1051px;
-            font-size: 15px; 
-                 
-
-    }
-    &__text2 {
-            position: absolute;
-            left: calc(50% - 91px/2 - 134.5px);
-            top: 1051px;
-            
-            font-size: 15px;
-            align-items: center;
-            
-
+    &__post-inner {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        margin-bottom: 16px;
+        img {
+            width: 71px;
+            height: 71px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
     }
 
-    &__icone1{
-        width: 30px;
-        height: 30px;
-        border-radius: 5px;
-
+    &__post-title {
+        font-weight: 800;
+        font-size: 20px;
     }
-    &__icone2{
-        width: 20px;
-        
-        
-        
-
+    &__post-footer {
+        display: flex;
+        gap: 23px;
+        padding-left: 25px;
     }
+
+    &__post-box {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        svg {
+            width: 20px;
+            height: 21px;
+            fill: transparent;
+        }
+    }
+    &__post-text {
+        font-size: 15px;
+    }
+    
+
+   
 }
