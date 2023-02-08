@@ -9,7 +9,7 @@ const MainSection = () => {
 			<div className="container">
 				<div className="hi__grid">
 					<div className="hi__image">
-						<img src={ava} alt="ava "/>
+						<img src={ava} alt="ava"/>
 					</div>
 					<p className='hi__txt'>Unique training with	app & business pro Alex</p>
 					<div className="hi__body">
@@ -30,3 +30,4 @@ const MainSection = () => {
 };
 
 export default MainSection;
+

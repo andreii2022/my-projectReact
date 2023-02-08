@@ -38,14 +38,12 @@ const Header = () => {
                         </svg>
                         <span className='header__post-text'>45+ Minutes</span>
                     </div>
-
                 </div>
-                
-                
-
             </div>
         </div>
     </header>       
+
+    
     
     );
 };

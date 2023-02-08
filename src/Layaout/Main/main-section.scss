@@ -19,20 +19,20 @@
         // 1 block
         order: 1;
         margin-bottom: 25px;
-				width: 352px;
-				height: 383px;
-				overflow: hidden;
-				img {
-					width: 100%;
-          object-fit: cover;
-          height: 100%;
-				}
+		width: 352px;
+		height: 383px;
+		overflow: hidden;
+		img {
+		    width: 100%;
+            object-fit: cover;
+            height: 100%;
+		}
 
         @media screen and (max-width:992px){
-					order: 2;
-					width: 208px;
-					height: 208px;
-					border-radius: 50%;
+		    order: 2;
+			width: 208px;
+			height: 208px;
+			border-radius: 50%;
         }
     }
 
@@ -87,7 +87,7 @@
     
 		&__title {
 			font-size: 46px;
-   		font-weight: 800;
+   		    font-weight: 800;
 			margin-top: 30px;
 			margin-bottom: 45px;
 		}

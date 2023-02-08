@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import CardWebinar from '../CardsWebinar/CardWebinar';
-import icons from '../../images/sprites/sprite.svg'
+import icons from '../../images/sprites/sprite.svg';
 
 function Webinar() {
-	const [cards] = useState([
+	const cards = [
 		{
 			id: 1,
 			icon: `${icons}#baks`,
@@ -28,7 +28,7 @@ function Webinar() {
 			spanDesc: 'Launch Your Own App',
 			desc: 'for IOS and Android in 7 days without coding'
 		}
-	])
+	]
 	
     return (
       <section className='discover'>
@@ -41,9 +41,7 @@ function Webinar() {
 							<CardWebinar card={card} key={card.id} styleClass="discover__card discover-card" />
 						)}
 					</div>
-
 				</div>
-
       </section>
     );
 };
