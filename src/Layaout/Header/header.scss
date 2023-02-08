@@ -60,9 +60,16 @@
         height: 448px;
         background: #E5E5E5;
         position: relative;
+        &:hover {
+            .header__play {
+                opacity: 1;
+            }
+        }
     }
 
     &__play {
+        opacity: 0;
+        transition: .4s;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -81,7 +88,13 @@
             transform: translate(-50%, -50%);
             width: 20px;
             height: 20px;
-            background: url('../../images/play.svg') no-repeat;
+            background: url('../../images/pause.svg') no-repeat;
+        }
+        &.pause {
+            &::before {
+                background: url('../../images/play.svg') no-repeat;
+            }
+            
         }
     }
 
