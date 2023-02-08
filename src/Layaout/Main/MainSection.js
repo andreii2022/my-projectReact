@@ -13,7 +13,7 @@ const MainSection = () => {
 					</div>
 					<p className='hi__txt'>Unique training with	app & business pro Alex</p>
 					<div className="hi__body">
-						<h2 className="hi__title">What You’ll Learn</h2>
+						<h2 className="hi__title subtitle">What You’ll Learn</h2>
 						<ul className="hi__list">
 							<li>How To <span>Convert Your Followers</span> Into Loyal Clients</li>
 							<li>How To <span>Earn $100k Monthly</span> With Your Branded App</li>

@@ -34,7 +34,7 @@ function Webinar() {
       <section className='discover'>
 				<div className="container">
 					<p className="discover__subtitle">Let's discover more</p>
-					<h2 className="discover__title">After This Webinar You Will Be Able To…</h2>
+					<h2 className="discover__title subtitle">After This Webinar You Will Be Able To…</h2>
 
 					<div className="discover__cards">
 						{cards.map(card => 

@@ -1,0 +1,21 @@
+.footer {
+    padding: 20px 0;
+    background: #191818;
+
+    &__list {
+        font-size: 0;
+    }
+
+    &__item {
+        font-size: 20px;
+        display: inline-block;
+        &+li {
+            margin-left: 32px;
+        }
+    }
+
+    &__link {
+        color: #E5E5E5;
+        text-decoration: none;
+    }
+}

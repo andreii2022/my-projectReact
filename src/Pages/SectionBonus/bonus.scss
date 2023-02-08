@@ -1,20 +1,31 @@
 .bonus{
     text-align: center;
-    padding-top: 45px;
-    padding-bottom: 50px;
+    padding: 50px 0;
     position: relative;
     background: rgba(28, 80, 254, 0.16);
 
+    &__title {
+        max-width: 620px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
 
+    &__text {
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
 
+    &__promotion {
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
 
-
-&__box{
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 50px 0;
-
-}
-
-
+    &__box-btn {
+        width: 80%;
+    }
 }

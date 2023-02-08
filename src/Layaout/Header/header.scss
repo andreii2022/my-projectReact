@@ -46,18 +46,7 @@
     }
 
     &__title {
-        font-size: 56px;
-        line-height: 68px;
-        font-weight: 800;
         margin-bottom: 35px;
-        @media screen and (max-width: 800px) {
-            font-size: 44px;
-            line-height: 51px;
-        }
-        @media screen and (max-width: 425px) {
-            font-size: 36px;
-            line-height: 43px;
-        }
     }
 
     &__txt {

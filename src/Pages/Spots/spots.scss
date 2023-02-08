@@ -1,0 +1,36 @@
+.spots {
+    padding: 50px 0;
+    text-align: center;
+
+    &__title {
+        max-width: 680px;
+        margin: 0 auto 45px;
+    }
+
+    &__tooltip {
+        display: inline-block;
+        text-transform: uppercase;
+        color: #1C50FE;
+        font-size: 30px;
+        font-weight: 800;
+        padding: 15px 30px;
+        background: #E5E5E5;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 25px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -19px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border: 0 solid transparent;
+            border-right-width: 16px;
+            border-left-width: 16px;
+            border-bottom: 20px solid #E5E5E5;
+        }
+    }
+}
