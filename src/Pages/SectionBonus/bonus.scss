@@ -3,11 +3,17 @@
     padding: 50px 0;
     position: relative;
     background: rgba(28, 80, 254, 0.16);
+		@media screen and (max-width: 540px) {
+			padding: 25px 0 40px;
+		}
 
     &__title {
         max-width: 620px;
         margin: 0 auto;
         margin-bottom: 35px;
+				@media screen and (max-width: 540px) {
+					margin-bottom: 20px;
+				}
     }
 
     &__text {
@@ -16,6 +22,15 @@
         font-size: 20px;
         line-height: 25px;
         margin-bottom: 25px;
+				@media screen and (max-width: 768px) {
+					font-size: 15px;
+					line-height: 18px;
+				}
+				@media screen and (max-width: 540px){
+					font-size: 10px;
+					line-height: 15px;
+					margin-bottom: 20px;
+				}
     }
 
     &__promotion {
@@ -23,6 +38,15 @@
         line-height: 40px;
         font-weight: 700;
         margin-bottom: 30px;
+				@media screen and (max-width: 768px) {
+					font-size: 22px;
+					line-height: 26px;
+				}
+				@media screen and (max-width: 540px){
+					font-size: 14px;
+					line-height: 17px;
+					margin-bottom: 20px;
+				}
     }
 
     &__box-btn {

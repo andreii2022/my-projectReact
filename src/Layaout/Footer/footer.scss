@@ -1,6 +1,9 @@
 .footer {
     padding: 20px 0;
     background: #191818;
+		@media screen and (max-width: 768px) {
+			padding: 22px 0 23px;
+		}
 
     &__list {
         font-size: 0;
@@ -9,8 +12,17 @@
     &__item {
         font-size: 20px;
         display: inline-block;
+				@media screen and (max-width: 768px) {
+					font-size: 15px;
+				}
+				@media screen and (max-width: 540px) {
+					font-size: 10px;
+				}
         &+li {
             margin-left: 32px;
+						@media screen and (max-width: 768px) {
+							margin-left: 24px;
+						}
         }
     }
 

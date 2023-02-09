@@ -1,6 +1,9 @@
 .hi{
     background: #D2DBF7;
     padding: 50px 0px;
+		@media screen and (max-width: 540px) {
+			padding: 25px 0;
+		}
 
     &__grid {
         display: grid;
@@ -16,24 +19,24 @@
     }
 
     &__image {
-        // 1 block
-        order: 1;
-        margin-bottom: 25px;
-		width: 352px;
-		height: 383px;
-		overflow: hidden;
-		img {
-		    width: 100%;
-            object-fit: cover;
-            height: 100%;
-		}
+      // 1 block
+      order: 1;
+      margin-bottom: 25px;
+			width: 352px;
+			height: 383px;
+			overflow: hidden;
+			img {
+				width: 100%;
+      	object-fit: cover;
+      	height: 100%;
+			}
 
-        @media screen and (max-width:992px){
-		    order: 2;
+    @media screen and (max-width:992px) {
+		  order: 2;
 			width: 208px;
 			height: 208px;
 			border-radius: 50%;
-        }
+      }
     }
 
     &__txt {
@@ -46,6 +49,10 @@
         @media screen and (max-width:992px){
             order: 4;
         }
+				@media screen and (max-width: 540px){
+					font-size: 10px;
+					max-width: 115px;
+			}
     }
 
     &__body {
@@ -70,15 +77,33 @@
             order: 3;
 						margin-top: 0;
             padding: 10px 50px;
+						margin-bottom: 20px;
         }
     }
 
     &__list {
 			li {
 				margin-bottom: 25px;
-				background: url('../../images/chek.svg')  0 0 no-repeat;
 				font-size: 20px;
 				padding: 0px 0px 0px 36px;
+				position: relative;
+				@media screen and (max-width: 540px) {
+					line-height: 18px;
+					font-size: 15px;
+					padding: 0px 0px 0px 33px;
+				}
+			}
+			svg {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 0;
+				width: 25px;
+				height: 20px;
+				@media screen and (max-width: 540px) {
+					width: 18px;
+					height: 15px;
+				}
 			}
       span {
         font-weight: 800;
@@ -88,6 +113,9 @@
 		&__title {
 			margin-top: 30px;
 			margin-bottom: 45px;
+			@media screen and (max-width: 540px) {
+				margin-bottom: 20px;
+			}
 		}
 }
 
